@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wonders of the World - Feedback Page</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+   <link rel="stylesheet" href="style.css">
+   
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+   <link rel="stylesheet" href="feedback page/LING.HTMl">
+</head>
+<body>
+    
+  <header>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+      <div class="container">
+          <a data-aos="fade-right" class="navbar-brand" href="#"><span  data-aos="fade-right"  class="text-warning">WOW</span>WONDERS</a> <button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-bs-target="#navbarSupportedContent" data-bs-toggle="collapse" type="button"><span class="navbar-toggler-icon"></span></button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                      <a class="nav-link" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="About.html">About</a>
+                  </li>
+                  
+                  <li class="nav-item">
+                      <a class="nav-link" href="feedback.html.HTML">Feedback</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="gallery.html">Gallery</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="first.html">Contact</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="contactDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="true">
+                      7 wonders of World
+        
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="contactDropdown">
+                      <li><a class="dropdown-item" href="chris redimer.html">Christ the Redeemer </a></li>
+                      <li><a class="dropdown-item" href="manchu pechu.html">Machu Picchu</a></li>
+                      <li><a class="dropdown-item" href="chicken itza.html">Chichén Itzá</a></li>
+                      <li><a class="dropdown-item" href="the great wall china.html">The Great Wall of China</a></li>
+                      <li><a class="dropdown-item" href="corosellum.html">The Colosseum</a></li>
+                      <li><a class="dropdown-item" href="petra.html">Petra</a></li>
+                      <li><a class="dropdown-item" href="Taj mahal.html">Taj Mahal </a></li>
+                     
+                    </ul> </li>
+              </ul>
+          </div>
+      </div>
+  </nav>
+  </header>
+    <div class="container my-5">
+        <div class="row align-items-center">
+            <!-- Image Section -->
+            <div class="col-lg-6 text-center mb-4">
+                <img src="christ/christ.jpg" class="img-fluid rounded shadow" alt="A beautiful view of one of the Wonders of the World">
+            </div>
+            
+            <!-- Feedback Form Section -->
+            <div class="col-lg-6">
+                <h2 class="mb-4 text-center text-lg-start">Share Your Feedback</h2>
+                <p class="text-muted mb-3">Your insights help us improve. Let us know what you think!</p>
+                <form action="submit_feedback.jsp" method="POST">
+                    <!-- Name -->
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Your Name:</label>
+                        <input type="text" id="name" name="name" class="form-control" placeholder="Enter your name" required>
+                    </div>
+                    <!-- Email -->
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Your Email:</label>
+                        <input type="email" id="email" name="email" class="form-control" placeholder="Enter your email address" required>
+                    </div>
+                    <!-- Rating -->
+                    <!-- <div class="mb-3"> -->
+                        <!-- <label class="form-label" for="rating">Rate Us:</label> -->
+                        <!-- <fieldset id="rating" class="rating d-flex justify-content-center justify-content-lg-start gap-1"> -->
+                            <!-- <input type="radio" id="star5" name="rating" value="5"> -->
+                            <!-- <label for="star5" title="5 stars">&#9733;</label> -->
+                            <!-- <input type="radio" id="star4" name="rating" value="4"> -->
+                            <!-- <label for="star4" title="4 stars">&#9733;</label> -->
+                            <!-- <input type="radio" id="star3" name="rating" value="3"> -->
+                            <!-- <label for="star3" title="3 stars">&#9733;</label> -->
+                            <!-- <input type="radio" id="star2" name="rating" value="2"> -->
+                            <!-- <label for="star2" title="2 stars">&#9733;</label> -->
+                            <!-- <input type="radio" id="star1" name="rating" value="1"> -->
+                            <!-- <label for="star1" title="1 star">&#9733;</label> -->
+                        <!-- </fieldset> -->
+                    <!-- </div> -->
+                    
+                    <!-- Feedback Comments -->
+                    <div class="mb-3">
+                        <label for="feedback" class="form-label">Your Comments:</label>
+                        <textarea id="feedback" name="feedback" rows="5" class="form-control" placeholder="Tell us what you think..." required></textarea>
+                    </div>
+                    <!-- Submit Button -->
+                    <button class="btn btn-donate">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <footer class="bg-dark text-light pt-5 pb-4">
+        <div class="container text-center text-md-start">
+          <div class="row text-center text-md-start">
+            
+            <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mb-4">
+              <h5 class="text-uppercase fw-bold text-warning">WOW WONDERS</h5>
+              <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; background-color: #ffc107; height: 2px;" />
+              <p>
+                Your one-stop destination for inspiration and exploration. We are committed to delivering quality content and great user experiences.
+              </p>
+            </div>
+      
+           
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+              <h5 class="text-uppercase fw-bold">Quick Links</h5>
+              <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; background-color: #ffc107; height: 2px;" />
+              <p><a href="#" class="text-light text-decoration-none">Home</a></p>
+              <p><a href="#" class="text-light text-decoration-none">About</a></p>
+              <p><a href="#" class="text-light text-decoration-none">Services</a></p>
+              <p><a href="#" class="text-light text-decoration-none">Contact</a></p>
+            </div>
+      
+           >
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-4">
+              <h5 class="text-uppercase fw-bold">Contact</h5>
+              <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; background-color: #ffc107; height: 2px;" />
+              <p><i class="fas fa-home me-3"></i> 123 Main Street, City, Country</p>
+              <p><i class="fas fa-envelope me-3"></i> info@example.com</p>
+              <p><i class="fas fa-phone me-3"></i> + 123 456 789</p>
+              <p><i class="fas fa-print me-3"></i> + 987 654 321</p>
+            </div>
+      
+           
+            <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mb-4">
+              <h5 class="text-uppercase fw-bold">Follow us</h5>
+              <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; background-color: #ffc107; height: 2px;" />
+              <a href="#" class="btn btn-outline-light btn-floating m-1" role="button"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" class="btn btn-outline-light btn-floating m-1" role="button"><i class="fab fa-twitter"></i></a>
+              <a href="#" class="btn btn-outline-light btn-floating m-1" role="button"><i class="fab fa-instagram"></i></a>
+              <a href="#" class="btn btn-outline-light btn-floating m-1" role="button"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+          </div>
+        </div>
+      
+       
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+          © 2024 Copyright: 
+          <a class="text-warning text-decoration-none" href="#">WOW WONDERS</a>
+        </div>
+      </footer>
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+   <!-- Bootstrap JavaScript Libraries -->
+   <script
+   src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+   integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+   crossorigin="anonymous"
+ ></script>
+
+ <script
+   src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+   integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+   crossorigin="anonymous"
+ ></script>
+    <script>
+        AOS.init();
+      </script>
+</body>
+</html>

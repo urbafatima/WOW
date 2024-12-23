@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Responsive Gallery with Lightbox</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="gallery-container">
+        <h1>(WOW) Gallery</h1>
+        <div class="gallery">
+            
+            <div class="gallery-item">
+                <img src="picture/petra1.jpeg" alt="Image 1">
+            </div>
+            <div class="gallery-item">
+                <img src="../gallery/picture/colosseum 1.jpg" alt="Image 2">
+            </div>
+            <div class="gallery-item">
+                <img src="../gallery/picture/colosseum 2.jpg" alt="Image 3">
+            </div>
+            <div class="gallery-item">
+                <img src="../gallery/picture/colosseum 3.jpg" alt="Image 4">
+            </div>
+            <div class="gallery-item">
+                <img src="../gallery/picture/giza 1.jpg" alt="Image 5">
+            </div>
+            <div class="gallery-item">
+                <img src="../gallery/picture/giza 2.jpg" alt="Image 6">
+            </div>
+            <div class="gallery-item">
+                <img src="../gallery/picture/giza 3.jpg" alt="Image 7">
+            </div>
+            <div class="gallery-item">
+                <img src="../gallery/picture/itza 1.jpg" alt="Image 8">
+            </div>
+            <div class="gallery-item">
+                <img src="../gallery/picture/itza 2.jpg" alt="Image 9">
+            </div>
+            <div class="gallery-item">
+                <img src="../gallery/picture/machu pichu 1.jpg" alt="Image 10">
+            </div>
+            <div class="gallery-item">
+                <img src="../gallery/picture/machu pichu 2.jpg" alt="Image 11">
+            </div>
+            <div class="gallery-item">
+                <img src="../gallery/picture/machu pichu 3.jpg" alt="Image 12">
+            </div>
+            <div class="gallery-item">
+                <img src="../gallery/picture/petra 2.jpg" alt="Image 13">
+            </div>
+            <div class="gallery-item">
+                <img src="../gallery/picture/petra 3.jpg" alt="Image 14">
+            </div>
+            <div class="gallery-item">
+                <img src="../gallery/picture/taj mahal 1 .jpg" alt="Image 15">
+            </div>
+            <div class="gallery-item">
+                <img src="../gallery/picture/taj mahal 2 .jpg" alt="Image 16">
+            </div>
+            <div class="gallery-item">
+                <img src="../gallery/picture/taj mahal 3 .jpg" alt="Image 17">
+            </div>
+            <div class="gallery-item">
+                <img src="../gallery/picture/wall china 1.jpg" alt="Image 18">
+            </div>
+            <div class="gallery-item">
+                <img src="../gallery/picture/wall china 2.jpg" alt="Image 19">
+            </div>
+            <div class="gallery-item">
+                <img src="../gallery/picture/wall china 3.jpg" alt="Image 20">
+            </div>
+          
+        </div>
+    </div>
+
+   
+    <div class="lightbox-modal" id="lightboxModal">
+        <span class="close-btn" id="closeBtn">&times;</span>
+        <img id="lightboxImage" src="" alt="Full Image">
+    </div>
+
+    <script>
+        
+        const galleryItems = document.querySelectorAll('.gallery-item img');
+        const lightboxModal = document.getElementById('lightboxModal');
+        const lightboxImage = document.getElementById('lightboxImage');
+        const closeBtn = document.getElementById('closeBtn');
+
+        
+        galleryItems.forEach(item => {
+            item.addEventListener('click', () => {
+                lightboxModal.style.display = 'flex';  // Show the modal
+                lightboxImage.src = item.src;  // Set the image to the clicked image's src
+            });
+        });
+
+        // Close the lightbox when the close button is clicked
+        closeBtn.addEventListener('click', () => {
+            lightboxModal.style.display = 'none';  // Hide the modal
+        });
+
+        // Close the lightbox if user clicks outside the image
+        lightboxModal.addEventListener('click', (event) => {
+            if (event.target === lightboxModal) {
+                lightboxModal.style.display = 'none';  // Hide the modal if clicking outside the image
+            }
+        });
+    </script>
+
+</body>
+</html>

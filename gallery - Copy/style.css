@@ -1,0 +1,114 @@
+
+      
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+       
+        body {
+            font-family: Arial, sans-serif;
+            background-color:#e9994e;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        
+        .gallery-container {
+            text-align: center;
+            max-width: 1200px;
+            width: 100%;
+            margin: 20px;
+        }
+
+        .gallery-container h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 15px;
+            padding: 10px;
+        }
+
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 8px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease, opacity 0.3s ease;
+            border-radius: 8px;
+        }
+
+        
+        .gallery-item:hover {
+            transform: scale(1.05);
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.1);
+            opacity: 0.8;
+        }
+
+        
+        .lightbox-modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+        }
+
+        .lightbox-modal img {
+            max-width: 90%;
+            max-height: 90%;
+            border-radius: 10px;
+        }
+
+        .lightbox-modal .close-btn {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            font-size: 30px;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        
+        @media (max-width: 768px) {
+            .gallery-container h1 {
+                font-size: 2em;
+            }
+
+            .gallery {
+                grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            }
+        }
+
+        @media (max-width: 480px) {
+            .gallery-container h1 {
+                font-size: 1.5em;
+            }
+        }
+
+    

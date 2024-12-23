@@ -1,0 +1,514 @@
+.secpage{
+margin: 0;
+padding: 0;
+height: 1200px;
+background-color:rgb(218, 173, 133);
+
+
+
+
+}
+.head{
+font-size: 45px;
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+margin-left: 380px;
+overflow: hidden
+}
+/* navbar start */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+    * {
+        font-family: 'Montserrat', sans-serif;
+    }
+    .navbar .getstarted {
+        background: #106eea;
+        margin-left: 30px;
+        border-radius: 4px;
+        font-weight: 400;
+        color: #fff;
+        text-decoration: none;
+        padding: .5rem 1rem;
+        line-height: 2.3;
+    }
+    .navbar-nav a {
+        font-size: 15px;
+        text-transform: uppercase;
+        font-weight: 500;
+    }
+    .navbar-light .navbar-brand {
+        color: #000;
+        font-size: 25px;
+        text-transform: uppercase;
+        font-weight: bold;
+        letter-spacing: 2px;
+    }
+    .navbar-light .navbar-brand:focus, .navbar-light .navbar-brand:hover {
+        color: #000;
+    }
+    .navbar-light .navbar-nav .nav-link {
+        color: #000;
+    }
+    .navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+        color: #000;
+    }
+    .w-100 {
+        height: 100vh;
+    }
+    .navbar-toggler {
+        padding: 1px 5px;
+        font-size: 18px;
+        line-height: 0.3;
+        background: #fff;
+    }
+    .portfolio .card {
+        box-shadow: 15px 15px 40px rgba(0, 0, 0, 0.15);
+    }
+    .team .card {
+        box-shadow: 15px 15px 40px rgba(0, 0, 0, 0.15);
+    }
+    .services .card-body i {
+        font-size: 50px;
+    }
+    .team .card-body i {
+        font-size: 20px;
+    }
+        .about-text {
+            padding-top: 50px;
+        }
+        .card {
+            margin-bottom: 30px;
+        }
+    
+    a.nav-link:hover {
+        border-radius: 10px; /* Rounded corners */
+        background-color: #ffc107; /* Black background on hover */
+        color: white; /* White text on hover */
+      } 
+
+/* navbar end */
+.row{
+    display: flex;
+    justify-content: center;
+}
+.mainpage{
+color: black ;
+}
+
+  
+  /* General Styling */
+.secpage {
+    background-color: transparent; /* Light background to contrast with black navbar */
+    width: 100%;
+  }
+  
+  .head {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    color: #343a40; /* Dark text color matching the navbar */
+  }
+  
+  .card {
+    border: none; /* Remove default card border */
+    border-radius: 15px; /* Rounded corners for a modern look */
+    overflow: hidden; /* Ensure images don't overflow */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    transition: all 0.3s ease-in-out; /* Smooth hover effect */
+  }
+  
+  .card:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+  }
+  
+  .card-img-top {
+    object-fit: cover;
+    border-bottom: 4px solid #343a40; /* Add a border below the image for a polished look */
+  }
+  
+  .card-body {
+    background-color: #ffffff;
+  }
+  
+  .card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #343a40;
+  }
+  
+  .card-text {
+    font-size: 1rem;
+    text-align: center;
+  }
+  
+  hr {
+    margin: 10px 0;
+  }
+  
+  button {
+    background-color: #343a40;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+ 
+  
+  /* Media Queries */
+  @media (max-width: 768px) {
+    .row-cols-2 {
+      row-gap: 30px;
+    }
+    .wonder-card {
+      margin-bottom: 20px;
+    }
+    .card-body {
+      padding: 15px;
+    }
+  }
+
+  /* Footer Styling */
+
+
+header {
+  color: white;
+  text-align: center;
+  
+  width: 100%;
+  
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 1200px;
+  margin-top: 2rem;
+}
+
+.image-section {
+  flex: 1;
+  min-width: 300px;
+  max-width: 50%;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-section img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+ container {
+  flex: 1;
+  min-width: 300px;
+  max-width: 50%;
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+} 
+
+h2 {
+  color: #333;
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #555;
+}
+
+input, textarea, select {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+input[type="submit"] {
+  background-color:  rgb(218, 173, 133);
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+
+input[type="submit"]:hover {
+  background-color: #0facef;
+}
+
+.rating {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.rating input {
+  display: none;
+}
+
+.rating label {
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.rating input:checked ~ label {
+  color: gold;
+}
+
+@media (max-width: 768px) {
+  .content {
+      flex-direction: column;
+  }
+
+  .image-section, .container {
+      max-width: 100%;
+  }
+}
+/* Custom Button Styles */
+.btn-donate {
+  --clr-font-main: hsla(0 0% 20% / 100);
+  --btn-bg-1: hsla(194 100% 69% / 1);
+  --btn-bg-2: hsla(217 100% 56% / 1);
+  --btn-bg-color: hsla(360 100% 100% / 1);
+  --radii: 0.5em;
+
+  /* BS5 Overrides & Custom Styling */
+  cursor: pointer;
+  padding: 0.9em 1.4em; /* Adjust Bootstrap's padding */
+  font-size: 1rem; /* Matches BS5 font sizing */
+  font-weight: 500;
+  transition: 0.8s;
+  background-size: 280% auto;
+  background-image: linear-gradient(
+    325deg,
+    var(--btn-bg-2) 0%,
+    var(--btn-bg-1) 55%,
+    var(--btn-bg-2) 90%
+  );
+  border: none; /* Remove BS5 border */
+  border-radius: var(--radii); /* Customize border radius */
+  color: var(--btn-bg-color); /* Text color */
+  box-shadow: 0px 0px 20px rgba(71, 184, 255, 0.5),
+    0px 5px 5px -1px rgba(58, 125, 233, 0.25),
+    inset 4px 4px 8px rgba(175, 230, 255, 0.5),
+    inset -4px -4px 8px rgba(19, 95, 216, 0.35);
+}
+
+/* Hover Effect */
+.btn-donate:hover {
+  background-position: right top;
+}
+
+/* Focus and Active States */
+.btn-donate:is(:focus, :focus-visible, :active) {
+  outline: none;
+  box-shadow: 0 0 0 3px var(--btn-bg-color), 0 0 0 6px var(--btn-bg-2);
+}
+
+/* Reduce Motion for Accessibility */
+@media (prefers-reduced-motion: reduce) {
+  .btn-donate {
+    transition: linear;
+  }
+}
+/* From Uiverse.io by OliverZeros */ 
+button {
+  all: unset;
+}
+
+.button {
+  position: relative;
+  display: inline-flex;
+  height: 3.5rem;
+  align-items: center;
+  border-radius: 9999px;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  font-family: Segoe UI;
+  font-size: 1.2rem;
+  font-weight: 640;
+  color: #fafaf6;
+  letter-spacing: -0.06em;
+}
+
+.button-item {
+  background-color: transparent;
+  color: #1d1d1f;
+}
+
+.button-item .button-bg {
+  border-color: rgba(255, 208, 116);
+  background-color: rgba(255, 208, 116);
+}
+
+.button-inner,
+.button-inner-hover,
+.button-inner-static {
+  pointer-events: none;
+  display: block;
+}
+
+.button-inner {
+  position: relative;
+}
+
+.button-inner-hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transform: translateY(70%);
+}
+
+.button-bg {
+  overflow: hidden;
+  border-radius: 2rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: scale(1);
+  transition: transform 1.8s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.button-bg,
+.button-bg-layer,
+.button-bg-layers {
+  display: block;
+}
+
+.button-bg-layers {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  top: -60%;
+  aspect-ratio: 1 / 1;
+  width: max(200%, 10rem);
+}
+
+.button-bg-layer {
+  border-radius: 9999px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: scale(0);
+}
+
+.button-bg-layer.-purple {
+  background-color: rgba(163, 116, 255);
+}
+
+.button-bg-layer.-turquoise {
+  background-color: rgba(23, 241, 209);
+}
+
+.button-bg-layer.-yellow {
+  --tw-bg-opacity: 1;
+  background-color: rgba(255, 208, 116, var(--tw-bg-opacity));
+}
+
+.button:hover .button-inner-static {
+  opacity: 0;
+  transform: translateY(-70%);
+  transition:
+    transform 1.4s cubic-bezier(0.19, 1, 0.22, 1),
+    opacity 0.3s linear;
+}
+
+.button:hover .button-inner-hover {
+  opacity: 1;
+  transform: translateY(0);
+  transition:
+    transform 1.4s cubic-bezier(0.19, 1, 0.22, 1),
+    opacity 1.4s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.button:hover .button-bg-layer {
+  transition:
+    transform 1.3s cubic-bezier(0.19, 1, 0.22, 1),
+    opacity 0.3s linear;
+}
+
+.button:hover .button-bg-layer-1 {
+  transform: scale(1);
+}
+
+.button:hover .button-bg-layer-2 {
+  transition-delay: 0.1s;
+  transform: scale(1);
+}
+
+.button:hover .button-bg-layer-3 {
+  transition-delay: 0.2s;
+  transform: scale(1);
+}
+.gallery-container {
+    padding: 2rem;
+}
+.gallery img {
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+.gallery img:hover {
+    transform: scale(1.05);
+}
+.lightbox-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+    z-index: 1050;
+}
+.lightbox-modal img {
+    max-width: 90%;
+    max-height: 90%;
+}
+.close-btn {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+}
+
+        body {
+            padding-top: 56px; /* Adjust for fixed navbar */
+        }
+        .hero-section {
+            background: url('img/WOW\ logo2.png') no-repeat center center;
+            background-size: cover;
+            height: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: black;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+        .hero-section h1 {
+            font-size: 3rem;
+        }
+
+
+

@@ -1,0 +1,148 @@
+/* christ the redemeer
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f3e9;
+    color: rgb(218, 173, 133);
+}
+
+header {
+    background-color: rgb(218, 173, 133);
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+.content-container {
+    width: 100%;
+    margin: 20px auto;
+}
+
+.text-and-images {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    margin-bottom: 30px;
+}
+
+.text {
+    width: 65%;
+    float: left;
+    margin-left: 50px;
+}
+
+h1,
+h2 {
+    color: #0e0101ba;
+}
+
+h2 {
+    font-weight: bold;
+}
+
+p {
+    line-height: 1.8;
+    font-size: 16px;
+    color: #0e0101ba;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #d2b48c;
+    color: #fff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.ling {
+    float: right;
+    padding-left: 20%;
+    margin-right: 200px;
+    margin-bottom: 150px;
+    margin-top: 90px;
+
+}
+ 
+.image2 {
+    
+    width: 600px ;
+    margin-left: 900px;
+    padding-bottom: 200px;
+}
+
+
+.image3{
+    width: 600px ;
+    margin-left: 900px;
+    padding-bottom: 200px;
+}
+
+.video {
+    text-align: center;
+    display: flex;
+    padding-left: 28%;
+    padding-bottom: 15px;
+    
+
+}
+.textt{
+ margin-left: 40px;
+
+
+} */
+.head{
+    font-size: 45px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-left: 380px;
+    }
+     /* Navbar link styles */
+     .navbar-nav .nav-link {
+        font-weight: bold;
+        font-size: 16px;
+        color: black; /* Text color */
+        padding: 10px 20px; /* Add padding for better hover effect */
+        transition: background-color 0.3s ease; /* Smooth transition for background */
+      }
+    
+      /* Hover effect for nav links (background change) */
+      .navbar-nav .nav-link:hover {
+        background-color: black; /* Gold background on hover */
+        color: white; /* Text color remains white */
+        border-radius: 5px; /* Rounded corners */
+      }
+    
+      /* Dropdown menu styles */
+      .navbar-nav .nav-item.dropdown:hover .dropdown-menu {
+        display: block;
+        opacity: 1;
+        transition: opacity 0.3s ease;
+      }
+    
+      /* Dropdown menu background */
+      .dropdown-menu {
+        /* background-color: rgb(218, 173, 133); Same as navbar background */
+        border: none;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+      }
+    
+      /* Dropdown item styles */
+      .dropdown-item {
+        font-weight: bold;
+        color: black;
+        padding: 8px 16px;
+        transition: background-color 0.3s ease;
+      }
+    
+      /* Dropdown item hover effect (background change) */
+      .dropdown-item:hover {
+        background-color: black; /* Gold background on hover */
+        color: white; /* Text color remains white */
+      }
+    
+      /* Navbar background color */
+      nav {
+            background-color: rgb(218, 173, 133) !important;}
+      
